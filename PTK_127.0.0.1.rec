@@ -1,0 +1,565 @@
+<?xml version="1.0"?>
+<MacroEventList>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Navigate</EventType>
+    <EventTypeName>Navigate</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[http://127.0.0.1:8000/]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>1</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Delay</EventType>
+    <EventTypeName>Delay</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>7567</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>2</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Javascript</EventType>
+    <EventTypeName>Click</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[
+    (function(path){
+        let item = document.querySelector(path); 
+        item.click()
+        item.dispatchEvent(new Event('resize', {bubbles: true}))
+    })('INPUT[name="name"]')
+    ]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>3</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Javascript</EventType>
+    <EventTypeName>SetValue</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[
+    (function(path, data){
+        let item = document.querySelector(path); 
+        let lastValue = item.value
+        let event = new Event('input', {bubbles: true})
+        event.simulated = true
+        item.value = data
+        item.defaultValue = data
+        let tracker = item._valueTracker
+        if (tracker) { tracker.setValue(lastValue) }
+        item.dispatchEvent(event)
+        item.dispatchEvent(new Event('change', {bubbles: true}))
+        item.dispatchEvent(new Event('blur', {bubbles: true}))
+        item.dispatchEvent(new Event('resize', {bubbles: true}))
+    })('INPUT[name="name"]', `jhdgcc`)
+    ]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>4</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Javascript</EventType>
+    <EventTypeName>Click</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[
+    (function(path){
+        let item = document.querySelector(path); 
+        item.click()
+        item.dispatchEvent(new Event('resize', {bubbles: true}))
+    })('INPUT[name="age"]')
+    ]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>5</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Javascript</EventType>
+    <EventTypeName>SetValue</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[
+    (function(path, data){
+        let item = document.querySelector(path); 
+        let lastValue = item.value
+        let event = new Event('input', {bubbles: true})
+        event.simulated = true
+        item.value = data
+        item.defaultValue = data
+        let tracker = item._valueTracker
+        if (tracker) { tracker.setValue(lastValue) }
+        item.dispatchEvent(event)
+        item.dispatchEvent(new Event('change', {bubbles: true}))
+        item.dispatchEvent(new Event('blur', {bubbles: true}))
+        item.dispatchEvent(new Event('resize', {bubbles: true}))
+    })('INPUT[name="age"]', `56`)
+    ]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>6</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Javascript</EventType>
+    <EventTypeName>Click</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[
+    (function(path){
+        let item = document.querySelector(path); 
+        item.click()
+        item.dispatchEvent(new Event('resize', {bubbles: true}))
+    })('FORM[name="[object HTMLInputElement]"] > BUTTON')
+    ]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>7</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Delay</EventType>
+    <EventTypeName>Delay</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>8</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Javascript</EventType>
+    <EventTypeName>Click</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[
+    (function(path){
+        let item = document.querySelector(path); 
+        item.click()
+        item.dispatchEvent(new Event('resize', {bubbles: true}))
+    })('BODY')
+    ]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>9</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Javascript</EventType>
+    <EventTypeName>Click</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[
+    (function(path){
+        let item = document.querySelector(path); 
+        item.click()
+        item.dispatchEvent(new Event('resize', {bubbles: true}))
+    })('INPUT[name="name"]')
+    ]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>10</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Javascript</EventType>
+    <EventTypeName>SetValue</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[
+    (function(path, data){
+        let item = document.querySelector(path); 
+        let lastValue = item.value
+        let event = new Event('input', {bubbles: true})
+        event.simulated = true
+        item.value = data
+        item.defaultValue = data
+        let tracker = item._valueTracker
+        if (tracker) { tracker.setValue(lastValue) }
+        item.dispatchEvent(event)
+        item.dispatchEvent(new Event('change', {bubbles: true}))
+        item.dispatchEvent(new Event('blur', {bubbles: true}))
+        item.dispatchEvent(new Event('resize', {bubbles: true}))
+    })('INPUT[name="name"]', `lwed`)
+    ]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>11</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Javascript</EventType>
+    <EventTypeName>Click</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[
+    (function(path){
+        let item = document.querySelector(path); 
+        item.click()
+        item.dispatchEvent(new Event('resize', {bubbles: true}))
+    })('INPUT[name="age"]')
+    ]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>12</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Javascript</EventType>
+    <EventTypeName>SetValue</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[
+    (function(path, data){
+        let item = document.querySelector(path); 
+        let lastValue = item.value
+        let event = new Event('input', {bubbles: true})
+        event.simulated = true
+        item.value = data
+        item.defaultValue = data
+        let tracker = item._valueTracker
+        if (tracker) { tracker.setValue(lastValue) }
+        item.dispatchEvent(event)
+        item.dispatchEvent(new Event('change', {bubbles: true}))
+        item.dispatchEvent(new Event('blur', {bubbles: true}))
+        item.dispatchEvent(new Event('resize', {bubbles: true}))
+    })('INPUT[name="age"]', `78`)
+    ]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>13</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Javascript</EventType>
+    <EventTypeName>Click</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[
+    (function(path){
+        let item = document.querySelector(path); 
+        item.click()
+        item.dispatchEvent(new Event('resize', {bubbles: true}))
+    })('FORM[name="[object HTMLInputElement]"] > BUTTON')
+    ]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>14</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Delay</EventType>
+    <EventTypeName>Delay</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>15</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Javascript</EventType>
+    <EventTypeName>Click</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[
+    (function(path){
+        let item = document.querySelector(path); 
+        item.click()
+        item.dispatchEvent(new Event('resize', {bubbles: true}))
+    })('INPUT[name="name"]')
+    ]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>16</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Javascript</EventType>
+    <EventTypeName>SetValue</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[
+    (function(path, data){
+        let item = document.querySelector(path); 
+        let lastValue = item.value
+        let event = new Event('input', {bubbles: true})
+        event.simulated = true
+        item.value = data
+        item.defaultValue = data
+        let tracker = item._valueTracker
+        if (tracker) { tracker.setValue(lastValue) }
+        item.dispatchEvent(event)
+        item.dispatchEvent(new Event('change', {bubbles: true}))
+        item.dispatchEvent(new Event('blur', {bubbles: true}))
+        item.dispatchEvent(new Event('resize', {bubbles: true}))
+    })('INPUT[name="name"]', `kdjfhke`)
+    ]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>17</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Javascript</EventType>
+    <EventTypeName>Click</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[
+    (function(path){
+        let item = document.querySelector(path); 
+        item.click()
+        item.dispatchEvent(new Event('resize', {bubbles: true}))
+    })('INPUT[name="age"]')
+    ]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>18</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Javascript</EventType>
+    <EventTypeName>SetValue</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[
+    (function(path, data){
+        let item = document.querySelector(path); 
+        let lastValue = item.value
+        let event = new Event('input', {bubbles: true})
+        event.simulated = true
+        item.value = data
+        item.defaultValue = data
+        let tracker = item._valueTracker
+        if (tracker) { tracker.setValue(lastValue) }
+        item.dispatchEvent(event)
+        item.dispatchEvent(new Event('change', {bubbles: true}))
+        item.dispatchEvent(new Event('blur', {bubbles: true}))
+        item.dispatchEvent(new Event('resize', {bubbles: true}))
+    })('INPUT[name="age"]', `5`)
+    ]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>19</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Javascript</EventType>
+    <EventTypeName>Click</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[
+    (function(path){
+        let item = document.querySelector(path); 
+        item.click()
+        item.dispatchEvent(new Event('resize', {bubbles: true}))
+    })('SELECT[name="role"]')
+    ]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>20</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Javascript</EventType>
+    <EventTypeName>SetValue</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[
+    (function(path, data){
+        let item = document.querySelector(path); 
+        let lastValue = item.value
+        let event = new Event('input', {bubbles: true})
+        event.simulated = true
+        item.value = data
+        item.defaultValue = data
+        let tracker = item._valueTracker
+        if (tracker) { tracker.setValue(lastValue) }
+        item.dispatchEvent(event)
+        item.dispatchEvent(new Event('change', {bubbles: true}))
+        item.dispatchEvent(new Event('blur', {bubbles: true}))
+        item.dispatchEvent(new Event('resize', {bubbles: true}))
+    })('SELECT[name="role"]', `Student`)
+    ]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>21</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Javascript</EventType>
+    <EventTypeName>Click</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[
+    (function(path){
+        let item = document.querySelector(path); 
+        item.click()
+        item.dispatchEvent(new Event('resize', {bubbles: true}))
+    })('SELECT[name="role"]')
+    ]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>22</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Delay</EventType>
+    <EventTypeName>Delay</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>23</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Javascript</EventType>
+    <EventTypeName>Click</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[
+    (function(path){
+        let item = document.querySelector(path); 
+        item.click()
+        item.dispatchEvent(new Event('resize', {bubbles: true}))
+    })('BODY > TABLE > TBODY > TR:nth-of-type(8) > TD:nth-of-type(5) > A')
+    ]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>24</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Delay</EventType>
+    <EventTypeName>Delay</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>25</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Javascript</EventType>
+    <EventTypeName>SetValue</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[
+    (function(path, data){
+        let item = document.querySelector(path); 
+        let lastValue = item.value
+        let event = new Event('input', {bubbles: true})
+        event.simulated = true
+        item.value = data
+        item.defaultValue = data
+        let tracker = item._valueTracker
+        if (tracker) { tracker.setValue(lastValue) }
+        item.dispatchEvent(event)
+        item.dispatchEvent(new Event('change', {bubbles: true}))
+        item.dispatchEvent(new Event('blur', {bubbles: true}))
+        item.dispatchEvent(new Event('resize', {bubbles: true}))
+    })('INPUT[name="age"]', `4`)
+    ]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>26</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Javascript</EventType>
+    <EventTypeName>Click</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[
+    (function(path){
+        let item = document.querySelector(path); 
+        item.click()
+        item.dispatchEvent(new Event('resize', {bubbles: true}))
+    })('BODY > TABLE > TBODY > TR:nth-of-type(9) > TD:nth-of-type(5) > BUTTON')
+    ]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>27</Step>
+  </MacroEvent>
+  <MacroEvent>
+    <WindowIndex>0</WindowIndex>
+    <EventType>Delay</EventType>
+    <EventTypeName>Delay</EventTypeName>
+    <UseEncryptedData>0</UseEncryptedData>
+    <Data><![CDATA[]]></Data>
+    <EncryptedData></EncryptedData>
+    <ElementPath><![CDATA[]]></ElementPath>
+    <Duration>3000</Duration>
+    <Enable>1</Enable>
+    <Optional>0</Optional>
+    <Step>28</Step>
+  </MacroEvent>
+</MacroEventList>
